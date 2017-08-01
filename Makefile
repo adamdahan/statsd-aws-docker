@@ -1,5 +1,5 @@
 build:
-	docker build -t graphcool/graphcool-statsd-aws:latest .
+	docker build --no-cache -t graphcool/graphcool-statsd-aws:latest .
 
 build-local:
 	docker build -f Dockerfile.local -t graphcool/graphcool-statsd-aws:local .
