@@ -11,6 +11,7 @@ Uses our [fork of the AWS backend for statsd](https://github.com/graphcool/aws-c
     - AWS_ACCESS_KEY_ID
     - AWS_SECRET_ACCESS_KEY
     - AWS_REGION
+- Then you can use the image `graphcool/graphcool-statsd-aws:latest`
 
 ## Local test setup
 If you want to start the container locally and connect it to AWS, simply inject the env vars into the container, for example via a .dockerenv file that has key=value pairs: `docker run -it --env-file=.dockerenv -p 8125:<mapping> graphcool/graphcool-statsd-aws:latest`
