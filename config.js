@@ -6,7 +6,8 @@
         accessKeyIdEnvKey: 'AWS_ACCESS_KEY_ID',
         secretAccessKeyEnvKey: 'AWS_SECRET_ACCESS_KEY',
         regionEnvKey: 'AWS_REGION',
-        verbose: true
+        verbose: true,
+        graphcoolKeyProcessing: true
     },
     port: 8125
 }

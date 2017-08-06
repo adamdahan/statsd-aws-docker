@@ -6,7 +6,7 @@ RUN adduser statsd --disabled-login --home /var/lib/statsd --shell /sbin/nologin
 RUN apt-get install tar wget
 
 RUN wget -qO- https://github.com/etsy/statsd/archive/v0.8.0.tar.gz | tar --strip-components=1 -xzC /var/lib/statsd
-RUN cd /var/lib/statsd && npm install git+https://github.com/graphcool/aws-cloudwatch-statsd-backend.git
+RUN cd /var/lib/statsd && npm install "git://github.com/graphcool/aws-cloudwatch-statsd-backend.git"
 
 USER statsd
 WORKDIR /var/lib/statsd
